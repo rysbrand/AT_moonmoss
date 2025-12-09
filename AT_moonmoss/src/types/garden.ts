@@ -13,8 +13,12 @@ export interface GardenPhilosophy {
     behaviorSummary: string;
 }
 
+
+//not currently used, for future versions.
 export type RitualType = "grounding" | "hearth" | "lumen" | "cycle";
 
+
+//not currently used, for future versions.
 export interface Ritual {
     id: string;
     practicalName: string;
@@ -26,6 +30,7 @@ export interface Ritual {
     isVisibleInDashboard: boolean;
 }
 
+//not currently used, for future versions.
 export interface RitualLogEntry {
     id: string;
     ritualId: string;
@@ -34,7 +39,7 @@ export interface RitualLogEntry {
 }
 
 export interface GardenState {
-    philosphy: GardenPhilosophyId | null;
+    philosophy: GardenPhilosophyId | null;
     rituals: Ritual[];
     ritualLogs: RitualLogEntry[];
 }
